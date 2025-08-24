@@ -47,17 +47,10 @@
       justify-content:center; 
       min-height:90vh; 
       text-align:center; 
-      background:url('https://images.unsplash.com/photo-1603575448360-9f6d8d72a01e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; 
+      background:url('https://images.pexels.com/photos/1837597/pexels-photo-1837597.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat; 
       padding:20px; 
       position:relative;
     }
-    .hero::after {
-      content:""; 
-      position:absolute; 
-      inset:0; 
-      background:rgba(0,0,0,0.6); /* dark overlay so text pops */
-    }
-    .hero > * { position:relative; z-index:5; }
 
     .hero h1 { 
       font-family:"Bebas Neue", Impact, sans-serif; 
@@ -65,11 +58,13 @@
       letter-spacing:.04em; 
       text-transform:uppercase; 
       margin:.5rem 0; 
+      text-shadow:2px 2px 6px rgba(0,0,0,0.8);
     }
     .hero p { 
       margin-top:10px; 
       font-size:1.3rem; 
       color:var(--muted); 
+      text-shadow:1px 1px 4px rgba(0,0,0,0.8);
     }
     .btn { 
       margin-top:1.5rem; 
@@ -94,6 +89,7 @@
     .section { 
       padding:64px 20px; 
       border-bottom:1px solid var(--line); 
+      background:#0A0A0A;
     }
     .section h2 { 
       font-family:"Bebas Neue", Impact, sans-serif; 
@@ -133,13 +129,13 @@
   <!-- Hero Section -->
   <section class="hero">
     <!-- Logo SVG -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="340" height="90" viewBox="0 0 340 90" role="img" aria-label="barbergoodz logo">
-      <rect width="100%" height="100%" fill="black"/>
-      <text x="20" y="55" font-family="Impact, Haettenschweiler, 'Bebas Neue', sans-serif" 
-            font-size="48" fill="white" style="letter-spacing:2px; text-transform:uppercase;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="360" height="100" viewBox="0 0 360 100" role="img" aria-label="barbergoodz logo">
+      <rect width="100%" height="100%" fill="black" opacity="0.6"/>
+      <text x="20" y="60" font-family="Impact, Haettenschweiler, 'Bebas Neue', sans-serif" 
+            font-size="52" fill="white" style="letter-spacing:2px; text-transform:uppercase;">
         BARBER<tspan fill="#39FF14">GOODZ</tspan>
       </text>
-      <path d="M25 65 Q90 80, 160 65" stroke="#39FF14" stroke-width="5" fill="none" />
+      <path d="M25 70 Q120 90, 220 70" stroke="#39FF14" stroke-width="5" fill="none" />
     </svg>
 
     <h1>NO GIMMICKS.<br>JUST GOODZ.</h1>
