@@ -27,6 +27,7 @@
       text-align:center; 
       font-size:.85rem; 
       overflow:hidden;
+      z-index:20;
     }
     header span { 
       display:inline-block; 
@@ -46,9 +47,18 @@
       justify-content:center; 
       min-height:90vh; 
       text-align:center; 
-      background:url('https://via.placeholder.com/1600x900/0A0A0A/FFFFFF?text=Graffiti+Wall') center/cover no-repeat; 
+      background:url('https://images.unsplash.com/photo-1603575448360-9f6d8d72a01e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; 
       padding:20px; 
+      position:relative;
     }
+    .hero::after {
+      content:""; 
+      position:absolute; 
+      inset:0; 
+      background:rgba(0,0,0,0.6); /* dark overlay so text pops */
+    }
+    .hero > * { position:relative; z-index:5; }
+
     .hero h1 { 
       font-family:"Bebas Neue", Impact, sans-serif; 
       font-size:clamp(40px,6vw,88px); 
@@ -123,13 +133,13 @@
   <!-- Hero Section -->
   <section class="hero">
     <!-- Logo SVG -->
-    <svg xmlns="http://www.w3.org/2000/svg" width="320" height="80" viewBox="0 0 320 80" role="img" aria-label="barbergoodz logo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="340" height="90" viewBox="0 0 340 90" role="img" aria-label="barbergoodz logo">
       <rect width="100%" height="100%" fill="black"/>
       <text x="20" y="55" font-family="Impact, Haettenschweiler, 'Bebas Neue', sans-serif" 
             font-size="48" fill="white" style="letter-spacing:2px; text-transform:uppercase;">
-        barbergoodz
+        BARBER<tspan fill="#39FF14">GOODZ</tspan>
       </text>
-      <path d="M20 65 Q60 75, 100 65" stroke="#39FF14" stroke-width="4" fill="none"/>
+      <path d="M25 65 Q90 80, 160 65" stroke="#39FF14" stroke-width="5" fill="none" />
     </svg>
 
     <h1>NO GIMMICKS.<br>JUST GOODZ.</h1>
